@@ -1,0 +1,7 @@
+services:
+  rpa-nps:
+    image: feli/rpa-nps:latest
+    build: .
+    restart: unless-stopped
+    ports:
+      - ${HTTP_SERVER_PORT}:${HTTP_SERVER_PORT}

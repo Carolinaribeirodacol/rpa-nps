@@ -1,0 +1,28 @@
+# RPA NPS Extractor
+
+Este projeto tem o objetivo de extrair o valor de NPS de relatório em PowerBI.
+
+## Variáveis de ambiente
+
+```
+# diz se está em modo DEV ou PROD
+APP_ENV=dev
+
+# ao consultar o serviço no PowerBI o browser deve ser ESCONDIDO
+BROWSER_HEADLES=false
+
+# valor padrão de espera ao carregar páginas no PowerBI
+BROWSER_DEFAULT_TIMEOUT=30000
+
+# porta onde o servidor web será instanciado
+HTTP_SERVER_PORT=5000
+```
+
+## Run Local
+
+**Importante:** este projeto não roda sobre o WSL diretamente, utilize o docker caso seja necessário.
+
+```
+$ npm install
+$ node index.js
+```
